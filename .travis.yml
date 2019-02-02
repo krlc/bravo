@@ -4,7 +4,7 @@ go:
   - "1.11"
 
 before_script:
-  - go get -t -v ./...
+  - go get -v
 
 script:
   - make test
