@@ -2,8 +2,11 @@ language: go
 
 go:
   - "1.11"
+    
+sudo: required
 
 before_script:
+  - sudo apt-get install libgtk-3-dev libappindicator3-dev
   - go get -v
 
 script:
