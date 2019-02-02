@@ -4,8 +4,8 @@ import (
     "log"
     "os/exec"
 
-    "bravo/icon"
     "github.com/getlantern/systray"
+    "github.com/krlc/bravo/icon"
 )
 
 const (
