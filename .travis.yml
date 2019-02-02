@@ -1,0 +1,10 @@
+language: go
+
+go:
+  - "1.11"
+
+before_script:
+  - go get -t -v ./...
+
+script:
+  - make test
