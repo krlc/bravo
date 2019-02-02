@@ -1,7 +1,7 @@
 <div align="center">
     <img src="https://cdn.jsdelivr.net/gh/krlc/bravo@master/icon-misc/bravo.svg" alt="Icon" width="300" />
   <br><br>
-    <p>System tray GUI for <a href="https://www.wireguard.com/">WireGuard</a></p>. <a href="https://travis-ci.com/krlc/bravo"><img alt="Build Status" src="https://travis-ci.com/krlc/bravo.svg?branch=master">
+  <p>System tray GUI for <a href="https://www.wireguard.com/">WireGuard</a>  <a href="https://travis-ci.com/krlc/bravo"><img alt="Build Status" src="https://travis-ci.com/krlc/bravo.svg?branch=master"></a></p>
   <p>A whiff of a normal GUI. Quite practical, though.</p>
 </div>
 
