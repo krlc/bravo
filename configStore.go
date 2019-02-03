@@ -59,7 +59,8 @@ func (c *ConfigStore) Watch() {
             select {
             case w := <-c.watcher.Events:
                 if w.Op == fsnotify.Write {
-                    log.Println("Updating config...")
+                    filePrefix, _ := filepath.Abs(configName)
+                    log.Println("Updating from config file", filePrefix)
                     c.configChange <- struct{}{}
                 }
             case <-c.watcher.Errors:

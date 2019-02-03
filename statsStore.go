@@ -61,6 +61,8 @@ func (d *StatsStore) Update() *StatsStore {
         return d
     }
 
+    // TODO: to be rewritten:
+
     peers := devs[0].Peers // we only expect 1 wireguard connection
     if peers == nil {
         d.Alive = false

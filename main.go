@@ -2,6 +2,7 @@ package main
 
 import (
     "log"
+    "os"
     "os/exec"
 
     "github.com/getlantern/systray"
@@ -91,6 +92,13 @@ func onReady() {
 }
 
 func main() {
+    f, err := os.OpenFile("/var/log/bravo.log", os.O_WRONLY | os.O_CREATE | os.O_APPEND, 0644)
+    if err != nil {
+        log.Fatal(err)
+    }
+    defer f.Close()
+    log.SetOutput(f)
+
     conf = NewConfig()
     systray.Run(onReady, nil)
 }
